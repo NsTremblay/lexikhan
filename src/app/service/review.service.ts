@@ -3,7 +3,7 @@ import { Http, Response } from '@angular/http';
 import { Observable } from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-const api = "http://162.243.196.50/api/lexikhan";
+const api = "http://nicolastremblay.ca/api/lexikhan";
 
 @Injectable()
 export class ReviewService {
