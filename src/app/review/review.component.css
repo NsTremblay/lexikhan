@@ -1,0 +1,68 @@
+
+.mainArticle{
+    background-color: white;
+    margin:25px;
+    padding:25px;
+    border-radius: 10px;
+}
+
+.titleLine{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:4rem;
+}
+
+.authorLine{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:1.2rem;
+
+}
+
+p{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size:1.4rem;
+    line-height:2rem;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top:200px;
+}
+
+.thumbsshell {
+    width:100%;
+    float:left;
+    margin-top:20px;
+    height:210px
+}
+
+.thumbswrapper {
+    overflow-x: scroll;
+    height:200px;
+    overflow-y:hidden;
+}
+
+.thumbwrapper {
+    float:left;
+    height:200px;
+}
+.thumbnail {
+    height:200px;
+    padding:5px;
+}
+
+li {
+    list-style:none;
+    display:inline-block;
+}
+
+ul{
+    padding:0;
+    margin:0;
+    white-space:nowrap;
+}

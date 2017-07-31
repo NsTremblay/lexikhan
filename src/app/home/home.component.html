@@ -1,0 +1,30 @@
+<div fxLayout="column" fxLayoutAlign="space-around start">
+    <div fxFlex>
+        <span class="cityTitle" *ngIf="states.currentCity=='ottawa'">Ottawa</span>
+        <span class="cityTitle" *ngIf="states.currentCity=='toronto'">Toronto</span>
+        <span class="cityTitle" *ngIf="states.currentCity=='montreal'">Montreal</span>
+    </div>
+</div>
+
+<div fxLayout="column" fxLayoutAlign="space-around center">
+
+    <div *ngIf="reviewsForCurrentCity==null" class="spinner">
+        <md-spinner></md-spinner>
+    </div>
+     <md-card fxFlex class="restaurantResume" *ngFor="let review of reviewsForCurrentCity">
+        <md-card-header>
+            <md-card-title [innerHTML]="review.title"></md-card-title>
+        </md-card-header>
+        <img *ngIf="review.images[0]!=null" md-card-image src="{{review.images[0].url}}" alt="{{review.images[0].alt}}">
+        <md-card-content>
+            <span style="font-weight:bold">Price: 
+                <span *ngIf="review.priceRange==1">$</span>
+            <span *ngIf="review.priceRange==2">$$</span>
+            <span *ngIf="review.priceRange==3">$$$</span>
+            </span>
+        </md-card-content>
+        <md-card-actions>
+            <button md-button routerLink="/review/{{review.uuid}}">More</button>
+        </md-card-actions>
+    </md-card> 
+</div>

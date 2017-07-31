@@ -1,0 +1,42 @@
+<div class="mainArticle" *ngIf="review!=null">
+  <div fxLayout="column" fxLayoutAlign="space-around center">
+    <div fxFlex class="titleLine">
+      {{review.title}}
+    </div>
+  </div>
+
+  <div fxLayout="column" fxLayoutAlign="space-around start">
+    <div fxFlex class="authorLine">
+      <span style="font-weight:bold">Author</span>: {{review.author}} | <span style="font-weight:bold">Published</span> : {{review.created*1000 | date}}
+    </div>
+    
+
+  <div class="thumbsshell" *ngIf="review.images.length >0">
+            <div class="thumbswrapper">
+                <ul>
+            <!--    Iterate through all images and display them end to end as thumbs -->
+                    <li *ngFor="let image of review.images" >
+                        <div class="thumbwrapper">
+                          <img class="thumbnail" src="{{image.url}}" alt="{{image.alt}}"/>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    <!-- <div class="imageCarousel">
+        <div class="innerScroll">
+        <img *ngFor="let image of review.images" src="{{image.url}}" alt="{{image.alt}}" style="height:100%;"/>
+        </div>
+    </div> -->
+    <p [innerHTML]="review.body"></p>
+  </div>
+
+</div>
+
+
+<div *ngIf="review==null" class="spinner">
+  <md-spinner></md-spinner>
+</div>
+
+

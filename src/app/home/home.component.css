@@ -1,0 +1,34 @@
+.cityTitle{
+    font-family: 'Roboto', sans-serif;
+    font-size:10rem;
+    font-weight: 100;
+    color:white;
+    padding:25px;
+}
+
+:host{
+    padding:25px;
+}
+
+md-card{
+    max-width:400px
+}
+.restaurantResume{
+    width:800px;
+    margin:20px;
+}
+
+.spinner{
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 15px;
+    margin-top:200px;
+}
+
+md-card-title{
+    font-size: 3rem
+}

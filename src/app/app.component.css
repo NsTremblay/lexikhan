@@ -1,0 +1,27 @@
+.spacer {
+  flex: 1 1 auto;
+}
+.small-spacer {
+  width:10px;
+}
+md-toolbar{
+    background-color:transparent;
+}
+.cityselect{
+    cursor: pointer;
+    color:white;
+    font-weight: 100;
+    outline: none;
+}
+.currentCity{
+    font-weight: 500;
+}
+:host{
+  margin:0px;
+  background: no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:100%;
+}
